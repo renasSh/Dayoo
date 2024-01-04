@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Webpage</title>
+</head>
+<body>
+    <div id="particles-js"></div> <!-- This is your particle container -->
+    <div class="container">
+        <h1 class="glow-text">Welcome to The New Season</h1>
+        <p>Who will be the best player next?</p>
+
+       <div class="poll">
+            <label for="players">Choose a player:</label>
+            <select id="players" onchange="vote()">
+                <option value="Amad">Amad</option>
+                <option value="Renas">Renas</option>
+                <option value="Habib">Habib</option>
+                <option value="Anjam">Anjam</option>
+                <option value="Aram Adil">Aram Adil</option>
+                <option value="Pala">Pala</option>
+                <option value="Wjar">Wjar</option>
+                <option value="Redan">Redan</option>
+                <option value="Aram abd">Aram abd</option>
+                <option value="Gailan">Gailan</option>
+                <option value="Sahand">Sahand</option>
+                <option value="Hndren">Hndren</option>
+            </select>
+            <button onclick="submitVote()">Vote</button>
+            <p id="result">Votes:</p>
+            <div id="names-list"></div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="poll.js"></script>
+</body>
+</html>

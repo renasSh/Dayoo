@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'YourFont';
+    src: url('fonts/yourfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'YourFont', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px;
+}
+
+.glow-text {
+    font-size: 2em;
+    animation: glow 2s infinite alternate;
+    color: #fff; /* White color for the text */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    }
+}
+
+.additional-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.poll {
+    margin-top: 20px; /* Add margin to create space between poll elements */
+}
+
+#result {
+    margin-top: 20px; /* Add margin to create space between result and names list */
+}
+
+#names-list {
+    margin-top: 10px; /* Add margin to create space between names list and other elements */
+}
